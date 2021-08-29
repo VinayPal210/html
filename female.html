@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Female Wiki Table Generator</title>
+  <meta name="description" content="It's a handy shortcode generator for personal use only." />
+  <meta name="robots" content="noindex, nofollow">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+  * {
+
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body {
+    background: #020127;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 3px;
+    height: 40px;
+  }
+
+  .button {
+    background-color: #0066d0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 4px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  tr {
+    text-align: center;
+  }
+
+  a {
+    color: #00ff95;
+    text-decoration: none;
+  }
+</style>
+
+<body>
+  <center>
+    <h1>Female Wiki Table Generator</h1>
+    <br>
+    <p style="text-align:center">Please input the person&#39;s information here you are free to leave any box blank as per your convenience.</p><br>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+          </td>
+          <td><input id="ogname" name="ogname" type="text" placeholder="Name" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="fullname" name="fullname" type="text" placeholder="Birthname" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="nickname" name="nickname" type="text" placeholder="Nickname" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="profession" name="profession" type="text" placeholder="Profession" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="famousfor" name="famousfor" type="text" placeholder="Famous for/as" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="dob" name="dob" type="text" placeholder="Date of Birth" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="age" name="age" type="text" placeholder="Age (as in 2021)" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="birthplace" name="birthplace" type="text" placeholder="Birthplace" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="nationality" name="nationality" type="text" placeholder="Nationality" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="hometown" name="hometown" type="text" placeholder="Hometown" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="zodiac" name="zodiac" type="text" placeholder="Zodiac" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="religion" name="religion" type="text" placeholder="Religion" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="height_m" name="height_m" type="text" placeholder="Height in meters (example: 1.71 m)" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="height_i" name="height_i" type="text" placeholder="Height in feet-inches (example: 5’7″)" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="weight_p" name="weight_p" type="text" placeholder="Weight in Pounds (example: 154 lbs)" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="weight_k" name="weight_k" type="text" placeholder="Weight in Kilograms (example: 70 kg)" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="eyecolor" name="eyecolor" type="text" placeholder="Eye Color" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="haircolor" name="haircolor" type="text" placeholder="Hair Color" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="father" name="father" type="text" placeholder="Father Name" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="mother" name="mother" type="text" placeholder="Mother Name" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="sister" name="sister" type="text" placeholder="Sister Name" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="brother" name="brother" type="text" placeholder="Brother Name" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="maritalstatus" name="maritalstatus" type="text" placeholder="Marital Status" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="wife" name="wife" type="text" placeholder="Husband" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="affair" name="affair" type="text" placeholder="Affairs/Boyfriends" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="children" name="children" type="text" placeholder="Childrens" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="education" name="education" type="text" placeholder="Education Qualification" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="school" name="school" type="text" placeholder="School" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="college" name="college" type="text" placeholder="College" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="favsinger" name="favsinger" type="text" placeholder="Favourite Singers" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="favcolor" name="favcolor" type="text" placeholder="Favourite Colors" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="favfood" name="favfood" type="text" placeholder="Favourite Foods" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="hobbies" name="hobbies" type="text" placeholder="Hobbies" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="networth" name="networth" type="text" placeholder="Net Worth (example: $500 Million)" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="instagram" name="instagram" type="text" placeholder="Instagram Link (example: https://www.instagram.com/travisscott)" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="fb" name="fb" type="text" placeholder="Facebook Link (example: https://www.facebook.com/travisscott)" /></td>
+        <tr>
+          <td>
+          </td>
+          <td><input id="twitter" name="twitter" type="text" placeholder="Twitter Link (example: https://twitter.com/travisscott)" /></td>
+      </tbody>
+    </table>
+    <br><br>
+    </p>
+  </center>
+
+  <br>
+  <script>
+    function apk() {
+      var ogname = document.getElementById("ogname");
+      var fullname = document.getElementById("fullname");
+      var nickname = document.getElementById("nickname");
+      var profession = document.getElementById("profession");
+      var famousfor = document.getElementById("famousfor");
+      var dob = document.getElementById("dob");
+      var age = document.getElementById("age");
+      var birthplace = document.getElementById("birthplace");
+      var nationality = document.getElementById("nationality");
+      var hometown = document.getElementById("hometown");
+      var zodiac = document.getElementById("zodiac");
+      var religion = document.getElementById("religion");
+      var height_m = document.getElementById("height_m");
+      var height_i = document.getElementById("height_i");
+      var weight_p = document.getElementById("weight_p");
+      var weight_k = document.getElementById("weight_k");
+      var eyecolor = document.getElementById("eyecolor");
+      var haircolor = document.getElementById("haircolor");
+      var father = document.getElementById("father");
+      var mother = document.getElementById("mother");
+      var sister = document.getElementById("sister");
+      var brother = document.getElementById("brother");
+      var maritalstatus = document.getElementById("maritalstatus");
+      var wife = document.getElementById("wife");
+      var affair = document.getElementById("affair");
+      var children = document.getElementById("children");
+      var education = document.getElementById("education");
+      var school = document.getElementById("school");
+      var college = document.getElementById("college");
+      var favsinger = document.getElementById("favsinger");
+      var favcolor = document.getElementById("favcolor");
+      var favfood = document.getElementById("favfood");
+      var hobbies = document.getElementById("hobbies");
+      var networth = document.getElementById("networth");
+      var instausername = document.getElementById("instagram");
+      var fblink = document.getElementById("fb");
+      var twitterusername = document.getElementById("twitter");
+      myArray = [ogname, fullname, nickname, profession, famousfor, dob, age, birthplace, nationality, hometown, zodiac,
+        religion, height_m, height_i, weight_p, weight_k, eyecolor, haircolor, father, mother, sister, brother,
+        maritalstatus, wife, affair, children, education, school, college, favsinger, favcolor, favfood, hobbies,
+        networth, instausername, fblink, twitterusername
+      ];
+      var i;
+      for (i = 0; i < myArray.length; i++) {
+        if (myArray[i].value === "") {
+          myArray[i].value = "N/A";
+        }
+      }
+
+
+
+      var str = `<h3><strong>` + ogname.value + ` Profile/Introduction</strong></h3>
+<table>
+<tbody>
+<tr>
+<td>Birthname</td>
+<td>` + fullname.value + `</td>
+</tr>
+<tr>
+<td>Nickname</td>
+<td>` + nickname.value + `</td>
+</tr>
+<tr>
+<td>Profession</td>
+<td>` + profession.value + `</td>
+</tr>
+<tr>
+<td>Famous for/as</td>
+<td>` + famousfor.value + `</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>` + ogname.value + ` Personal Life Info &amp; More</strong></h3>
+<table>
+<tbody>
+<tr>
+<td>Date of Birth/Birthday</td>
+<td>` + dob.value + `</td>
+</tr>
+<tr>
+<td>Age (as in 2021)</td>
+<td>` + age.value + `</td>
+</tr>
+<tr>
+<td>Birthplace</td>
+<td>` + birthplace.value + `</td>
+</tr>
+<tr>
+<td>Nationality</td>
+<td>` + nationality.value + `</td>
+</tr>
+<tr>
+<td>Hometown</td>
+<td>` + hometown.value + `</td>
+</tr>
+<tr>
+<td>Zodiac Sign/Sun Sign</td>
+<td>` + zodiac.value + `</td>
+</tr>
+<tr>
+<td>Religion</td>
+<td>` + religion.value + `</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>` + ogname.value + ` Height, Weight, Physical Stats &amp; More</strong></h3>
+<table>
+<tbody>
+<tr>
+<td>Height (approx.)</td>
+<td>in meters – ` + height_m.value + `
+in feet-inches – ` + height_i.value + `</td>
+</tr>
+<tr>
+<td>Weight (approx.)</td>
+<td>in Pounds – ` + weight_p.value + `
+in Kilograms – ` + weight_k.value + `</td>
+</tr>
+<tr>
+<td>Eye Color</td>
+<td>` + eyecolor.value + `</td>
+</tr>
+<tr>
+<td>Hair Color</td>
+<td>` + haircolor.value + `</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>` + ogname.value + ` Family Members Names &amp; Information</strong></h3>
+<table>
+<tbody>
+<tr>
+<td>Father</td>
+<td>` + father.value + `</td>
+</tr>
+<tr>
+<td>Mother</td>
+<td>` + mother.value + `</td>
+</tr>
+<tr>
+<td>Sisters</td>
+<td>` + sister.value + `</td>
+</tr>
+<tr>
+<td>Brother</td>
+<td>` + brother.value + `</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>` + ogname.value + ` Marital Status &amp; More</strong></h3>
+<table>
+<tbody>
+<tr>
+<td>Marital Status</td>
+<td>` + maritalstatus.value + `</td>
+</tr>
+<tr>
+<td>Husband/Spouse</td>
+<td>` + wife.value + `</td>
+</tr>
+<tr>
+<td>Affairs/Boyfriends</td>
+<td>` + affair.value + `</td>
+</tr>
+<tr>
+<td>Children's</td>
+<td>` + children.value + `</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>` + ogname.value + ` Education Qualification, School &amp; College</strong></h3>
+<table>
+<tbody>
+<tr>
+<td>Educational Qualification</td>
+<td>` + education.value + `</td>
+</tr>
+<tr>
+<td>School</td>
+<td>` + school.value + `</td>
+</tr>
+<tr>
+<td>College/University</td>
+<td>` + college.value + `</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>` + ogname.value + ` Favourite Things/Like &amp; Dislike</strong></h3>
+<table>
+<tbody>
+<tr>
+<td>Favourite Singers</td>
+<td>` + favsinger.value + `</td>
+</tr>
+<tr>
+<td>Favourite Colors</td>
+<td>` + favcolor.value + `</td>
+</tr>
+<tr>
+<td>Favourite Foods</td>
+<td>` + favfood.value + `</td>
+</tr>
+<tr>
+<td>Hobbies</td>
+<td>` + hobbies.value + `</td>
+</tr>
+</tbody>
+</table>
+<h3><strong>` + ogname.value + ` Money Factor</strong></h3>
+<table>
+<tbody>
+<tr>
+<td><strong>Net Worth</strong></td>
+<td><strong>` + networth.value + `</strong></td>
+</tr>
+</tbody>
+</table>
+<h3><strong>` + ogname.value + ` Biography &amp; </strong><strong>Some Other Lesser Known Facts About ` + ogname.value + `:</strong></h3>
+<h3>` + ogname.value + ` Social Media Accounts &amp; Channels</h3>
+<ul>
+ 	<li>Instagram: <a href="` + instausername.value + `" target="_blank" rel="nofollow noopener">Check Now</a></li>
+ 	<li>Facebook: <a href="` + fblink.value + `" target="_blank" rel="nofollow noopener">Check Now</a></li>
+ 	<li>Twitter: <a href="` + twitterusername.value + `" target="_blank" rel="nofollow noopener">Check Now</a></li>
+</ul>
+
+<hr />
+
+This was the complete latest information about “<strong>`+ ogname.value +`</strong>” that we curated through the internet. We at FameImpact hope you enjoyed this article and got satisfactory answers to your questions. The information provided above will be updated regularly. Any mistake that you might’ve noticed or any edit that you want to suggest is always welcome in the comment box below.
+
+Please share this article with your friends and visit again for the latest information on your favourite celebrities.
+
+Thank you for your gracious presence on FameImpact.com.`;
+
+      document.getElementById('demo').innerHTML += str;
+
+    }
+  </script>
+
+  <button class="button" onclick="apk()">Generate</button>
+  <br> <br>
+  <textarea style="resize: none;" cols="150" rows="10" id="demo"></textarea> <br> <br>
+  <!-- <button class="button" onclick="thb()">Final Output!</button> -->
+  <input class="button" onclick="myCopyFun()" type='button' value='Copy Output!'>
+  <input class="button" onclick="downloadAll()" type='button' value='Download Output!'>
+
+
+</body>
+<script>
+  function myCopyFun() {
+    var copyText = document.getElementById("demo");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("Copy");
+  }
+
+  function downloadAll() {
+    var blob = new Blob([document.getElementById("demo").value], {
+      type: "text/plain;charset=utf-8"
+    });
+    saveAs(blob, ogname.value + ".txt");
+  }
+  
+</script> <script type="text/javascript">
+  window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    e.returnValue = '';
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+
+</html>
